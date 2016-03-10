@@ -1,4 +1,4 @@
-package com.alibaba.dubbo.study.serialize;
+package com.alibaba.dubbo.study.common.serialize;
 
 import com.alibaba.dubbo.common.beanutil.JavaBeanDescriptor;
 import com.alibaba.dubbo.common.beanutil.JavaBeanSerializeUtil;

@@ -52,6 +52,10 @@ public abstract class Proxy
 		public Object invoke(Object proxy, Method method, Object[] args){ throw new UnsupportedOperationException("Method [" + ReflectUtils.getName(method) + "] unimplemented."); }
 	};
 
+	/**
+	 * 这是里利用若引用做一个缓存,也就是说如果某个key即ClassLoader对象在程序运行过程中未null,那么该ClassLoader对应的保存在
+	 * WeakHashMap中的Map<String,Object>对象也会被垃圾回收
+	 */
 	private static final Map<ClassLoader, Map<String, Object>> ProxyCacheMap = new WeakHashMap<ClassLoader, Map<String, Object>>();
 
 	private static final Object PendingGenerationMarker = new Object();

@@ -1,4 +1,4 @@
-package com.alibaba.dubbo.study.serialize;
+package com.alibaba.dubbo.study.common.serialize;
 
 /**
  * Created by dell on 2016/3/8.
